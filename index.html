@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snek</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="icon" type="image/x-icon" href="./resource/shoe-svgrepo-com (3).svg">
+
+</head>
+<body>
+    <div class="bg-neutral-200 text-xs font-bold z-40 relative py-2 px-20 hidden md:flex items-center justify-end ">
+        <a href="" class="hover:underline-offset-2 hover:underline">Find a Store</a> <span class="px-3" >|</span>
+        <a href="" class="hover:underline-offset-2 hover:underline">Support</a> <span class="px-3">|</span>
+        <a href="" class="hover:underline-offset-2 hover:underline">Track Your Order</a> <span class="px-3">|</span>
+        <a href="" class="hover:underline-offset-2 hover:underline">Corporate</a> <span class="px-3">|</span>
+        <a href="" class="hover:underline-offset-2 hover:underline">Sign In</a> <span class="px-3"></span>
+    </div>
+<!-- start header -->
+    <div id="header" class="flex justify-between px-4 md:px-16 bg-gradient-to-r from-white to-slate-200  z-40 relative hover:bg-gradient-to-l hover:from-white hover:to-slate-200 "> 
+        <div class="flex items-center justify-center">
+        <img src="./resource/shoe-svgrepo-com.svg" alt="shoe-svgrepo-com" width="65px" height="65px" class="mx-1"> 
+            <span class="text-3xl font-extrabold hidden md:inline-block">Snek</span>
+    </div>
+       <!-- start desktop view middle navbar menus -->
+        <div id="header_middle" class="hidden md:flex md:items-center md:justify-center">
+
+        </div>
+        <!-- end desktop view middle navbar menus -->
+<!-- start header_right_menu_div -->
+        <div class="flex ">
+            <img src="/resource/search-alt-2-svgrepo-com.svg" alt="search-alt-2-svgrepo-com" width="40px" height="40px" class="px-2" >
+            <img src="/resource/love-1489-svgrepo-com.svg" alt="love-1489-svgrepo-com" width="40px" height="40px" class="hidden md:inline-block px-2" > 
+            <img src="/resource/cart-shopping-svgrepo-com.svg" alt="cart-shopping-svgrepo-com" width="40px" height="40px" class=" px-2">
+            <img src="/resource/account-avatar-head-svgrepo-com.svg" alt="account-avatar-head-svgrepo-com" width="40px" height="40px" class="hidden md:inline-block px-2">
+            <img id="menu_btn"  src="/resource/menu-alt-right-svgrepo-com.svg" alt="menu-alt-right-svgrepo-com" 
+            width="45px" height="45px" class="px-2 md:hidden rotate-0 transition-transform duration-800">
+        </div>
+<!-- end  header_right_menu_div -->
+    </div> 
+<!-- end header -->
+<!-- start header dropdown  -->
+<div id="header_dropdown" class="bg-gradient-to-r from-slate-200 to-white flex absolute  w-screen
+ -translate-y-full transition-transform  duration-700  p-8">
+     <!-- start popular div  -->
+     <div id="popular" class=" flex-col  flex" style="flex:1">
+        <a href="" class="py-1 text-slate-500 font-bold hover:text-lime-500">Best Seller</a>
+        <a href="" class="py-1 text-slate-500 font-bold hover:text-lime-500">What's Trending</a>
+        <a href="" class="py-1 text-slate-500 font-bold hover:text-lime-500">New Arrivals</a>
+        <a href="" class="py-1 text-slate-500 font-bold hover:text-lime-500">Laid-Back Luxe</a>
+        <a href="" class="py-1 text-slate-500 font-bold hover:text-lime-500">Sprint Sneaker Mania</a>
+        <a href="" class="py-1 text-slate-500 font-bold hover:text-lime-500">The AW Collection</a>
+        <a href="" class="py-1 text-slate-500 font-bold hover:text-lime-500">Product Under 1000</a>
+
+      </div>
+     <!-- end popular div -->
+<!-- start header dropdown right section -->
+    <div id="header_dropdown_right" class="hidden md:flex w-full  flex-row order-1 " style="flex:4">
+
+    </div>
+    <!-- end header dropdown right section -->
+</div>
+      <!-- end header dropdown -->
+
+<!-- start navbar div -->
+<div id="navbar" class="flex absolute w-full bg-gradient-to-l from-slate-200 to-white md:hidden flex-col -translate-x-full 
+   transition-transform duration-700 p-12 " style="min-height: 100vh;" >
+    <!-- start women div -->
+     <!-- start international arrivals div -->
+    <div id="new_arrivals" class="flex flex-col md:items-center justify-center border-b-2 border-slate-200 items-start p-1">
+        <button id="new_arrivals_btn" class=" md:mx-2  md:h-full">
+        <a href="http://" class="md:hover:underline-offset-2 md:hover:underline md:hover:text-cyan-600 font-medium">New Arrivals</a>  
+        </button>
+    </div>
+    <!-- end international arrivals div -->
+    <div id="women_div" class="flex flex-col md:items-center justify-center border-b-2 border-slate-200 items-start p-1">
+        <button id="women_btn" class=" md:mx-2   md:h-full md:hover:underline-offset-2 md:hover:underline md:hover:text-cyan-600 font-medium flex items-center justify-between w-full md:w-fit">Women
+            <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class=" px-2 md:hidden">
+        </button>
+        <!-- start women sub content  -->
+        <div id="women_subcontent" class="md:flex md:flex-row w-full md:justify-evenly ">
+        <div class="hidden flex-col w-full md:mx-7 md:flex">
+            <button id="women_footwear_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Footwear
+                <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+            </button>
+            <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Heels</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sandal</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Canvas</a>
+         </div>
+        </div>
+        <div class="hidden flex-col w-full md:mx-7 md:flex">
+            <button id="women_clothes_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Clothes
+                <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+            </button>
+            <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Kurta</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Co-ordinate Set</a>
+         
+         </div>
+        </div>
+        <div class="hidden flex-col w-full md:mx-7 md:flex">
+            <button id="women_accessories_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Accessories
+                <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+            </button>
+            <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Bags</a>
+          
+         </div>
+        </div>
+        <div class="hidden flex-col w-full md:mx-7 md:flex">
+            <button id="women_brands_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Brands
+                <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+            </button>
+            <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Moochie</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Clarks</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Asics</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Ipanema</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Adidas</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Nino Rossi</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Jatarea</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sprint</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Dr. Mauch</a>
+         </div>
+        </div>
+        </div>
+        <!-- end women sub content  -->
+    </div>
+    <!-- end women div -->
+       <!-- start men div -->
+       <div id="men_div" class="flex flex-col md:items-center justify-center border-b-2 border-slate-200 items-start p-1">
+        <button id="men_btn" class=" md:mx-2   md:h-full md:hover:underline-offset-2 md:hover:underline md:hover:text-cyan-600 font-medium flex items-center justify-between w-full md:w-fit">Men
+            <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class=" px-2 md:hidden">
+        </button>
+        <!-- start women sub content  -->
+        <div id="men_subcontent" class="md:flex md:flex-row w-full md:justify-evenly ">
+        <div class="hidden flex-col w-full md:mx-7 md:flex">
+            <button id="men_footwear_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Footwear
+                <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+            </button>
+            <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Formal Shoe</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Casual Shoe</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Canvas</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sports Shoe</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sandal</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sports Sandal</a>
+
+         </div>
+        </div>
+        <div class="hidden flex-col w-full md:mx-7 md:flex">
+            <button id="men_clothes_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Clothes
+                <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+            </button>
+            <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">T-Shirt</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Casual Shirt</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Chinos</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Punjabi</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Jacket</a>
+         </div>
+        </div>
+        <div class="hidden flex-col w-full md:mx-7 md:flex">
+            <button id="men_accessories_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Accessories
+                <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+            </button>
+            <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Bags</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Belts</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Essentials</a>
+         </div>
+        </div>
+        <div class="hidden flex-col w-full md:mx-7 md:flex">
+            <button id="men_brands_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Brands
+                <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+            </button>
+            <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Venchuri</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Asics</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Adidas</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Maveric</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Cross</a>
+            <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sprint</a>
+         </div>
+        </div>
+        </div>
+     <!-- end men sub content  -->
+    </div>
+    <!-- end men div -->
+     <!-- start kids  div -->
+     <div id="kids" class="flex flex-col md:items-center justify-center border-b-2 border-slate-200 items-start p-1 ">
+        <button id="kids_btn" class="md:mx-2   md:h-full md:hover:underline-offset-2 md:hover:underline md:hover:text-cyan-600 font-medium flex items-center justify-between w-full md:w-fit">Kids
+            <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+        </button>
+         <!-- start kids sub content  -->
+         <div id="kids_subcontent" class="md:flex md:flex-row w-full md:justify-evenly ">
+            <div class="hidden flex-col w-full md:mx-7 md:flex">
+                <button id="kids_boys_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Boys
+                    <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+                </button>
+                <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Shoes</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sports Shoes</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sandals</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Boy's School Shoes</a>
+             </div>
+            </div>
+            <div class="hidden flex-col w-full md:mx-7 md:flex">
+                <button id="kids_girls_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Girls
+                    <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+                </button>
+                <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Shoes</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Sandals</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Girl's School Shoes</a>
+             </div>
+            </div>
+            <div class="hidden flex-col w-full md:mx-7 md:flex">
+                <button id="kids_accessories_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Accessories
+                    <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+                </button>
+                <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Bags</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Belts</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Essentials</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Wallets</a>
+             </div>
+            </div>
+            <div class="hidden flex-col w-full md:mx-7 md:flex">
+                <button id="kids_brands_btn" class="text-left py-1 pl-7 md:pl-0 font-bold md:border-b-2 md:border-slate-700">Brands
+                    <img src="./resource/arrow-down-svgrepo-com.svg" alt="arrow-down-svgrepo-com" width="40px" height="40px" class="float-right px-2 md:hidden">
+                </button>
+                <div class="hidden flex-col md:flex pl-10 md:pl-0 ">
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">School Mdart</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Adidas</a>
+                <a href="" class="py-1 text-sky-800 font-bold hover:text-lime-500">Twinkler</a>
+             </div>
+            </div>
+            </div>
+         <!-- end kids sub content  -->
+    </div>
+    <!-- end kids  div -->
+    <!-- start  Gift Voucher div -->
+    <div id="gift_voucher" class="flex flex-col md:items-center justify-center border-b-2 border-slate-200 items-start p-1 ">
+        <button id="gift_voucher_btn" class=" md:mx-2  md:h-full ">
+           <a href="" class="md:hover:underline-offset-2 md:hover:underline md:hover:text-cyan-600 font-medium"> Gift Voucher</a>
+      </button>
+    </div>
+    <!-- end Gift Voucher div -->
+
+ 
+
+     <!-- start important links -->
+      <div id="important_links" class="flex flex-col md:hidden items-start justify-center pt-10">
+           <button class="bg-slate-50 py-1"> My Account
+            <img src="./resource/account-avatar-head-svgrepo-com.svg" width="40px" height="40px"
+            alt="account-avatar-head-svgrepo-com" class="px-2 float-left">
+        </button>
+        <button class="bg-slate-50 py-1"> My Wishlist
+            <img src="./resource/love-1489-svgrepo-com.svg" width="40px" height="40px"
+            alt="love-1489-svgrepo-com.svg" class="px-2 float-left">
+        </button>
+        <button class="bg-slate-50 py-1 "> Find a Store
+            <img src="./resource/store-svgrepo-com.svg" width="40px" height="40px"
+            alt="store-svgrepo-com.svg" class="px-2 float-left">
+        </button>
+        <button class="bg-slate-50 py-1"> Support
+            <img src="./resource/question-svgrepo-com.svg" width="40px" height="40px"
+            alt="question-svgrepo-com.svg" class="px-2 float-left">
+        </button>
+        <button class="bg-slate-50 py-1"> Track Your Order
+            <img src="./resource/fulfillment-order-svgrepo-com.svg" width="40px" height="40px"
+            alt="fulfillment-order-svgrepo-com.svg" class="px-2 float-left">
+        </button>
+        <button class="bg-slate-50 py-1 "> Corporate
+            <img src="./resource/business-finance-corporate-34-svgrepo-com.svg" width="40px" height="40px"
+            alt="business-finance-corporate-34-svgrepo-com" class="px-2 float-left">
+        </button>
+        <button class="bg-slate-50 py-1 "> Sign In
+            <img src="./resource/sign-in-2-svgrepo-com.svg" width="40px" height="40px"
+            alt="sign-in-2-svgrepo-com.svg" class="px-2 float-left">
+        </button>
+        
+      </div>
+     <!-- end important links -->
+
+
+</div>
+<!-- end navbar div -->
+
+<div id="myDiv" class="bg-gradient-to-br from-amber-200 to-slate-500 w-full h-screen  text-2xl font-medium md:text-4xl p-10 
+flex items-center justify-center" >Project: Dropdown & Extended Responsive Navbar<br>Framework: Tailwind@3.4.17 </div>
+
+   
+    <script src="expand_for_mobile_view.js" type="module" ></script>
+    <script src="dropdown_for_desktop_view.js" type="module"></script>
+    <!-- <script src="test.js"></script> -->
+</body>
+</html>
